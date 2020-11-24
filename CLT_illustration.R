@@ -2,7 +2,7 @@ par(mfrow=c(2,2))
 
 set.seed(1925) #221186
 n=c(5,20,100,500) #number of samples
-sn=100 #sample size of each sample
+ns=100 #sample size of each sample
 
 for(i in 1:length(n)){
 x=array(runif(ns*n[i],0,50),dim=c(n[i],sn)) #sample from 
